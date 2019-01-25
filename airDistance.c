@@ -16,21 +16,20 @@
     int averageRadius = 6371;
     char equalSign;
     
-    printf("Insert the latitude of your origin: ");
+    printf("Enter latitude of origin: ");
     scanf("%lf\n", &latitudeA);
     printf("\n");
     
-    printf("Insert the longitude of your origin: ");
+    printf("Enter longitude of origin: ");
     scanf("%lf\n", &longitudeA);
     printf("\n");
     
-    printf("Insert the latitude of your destination: ");
+    printf("Enter latitude of destination: ");
     scanf("%lf\n", &latitudeB);
     printf("\n");
     
-    printf("Insert the longitude of your destination: ");
+    printf("Enter longitude of destination: ");
     scanf("%lf\n", &longitudeB);
-    printf("\n");
     printf("\n");
     
     equalSign = '=';
@@ -39,9 +38,9 @@
     printf("\n");
     printf("%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n", equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign);
     
-    printf("Origin: (%lf, %lf)\n", latitudeA,longitudeA);
+    printf("Origin:      (%lf, %lf)\n", latitudeA,longitudeA);
     
-    printf("Distance: (%lf, %lf)\n", latitudeB,longitudeB);
+    printf("Destination: (%lf, %lf)\n", latitudeB,longitudeB);
     
     latitudeA = (latitudeA/180)*PI;
     latitudeB = (latitudeB/180)*PI;
@@ -52,6 +51,7 @@
     airDistance = airDistance * averageRadius;
     
     printf("Air distance is %lf kms", airDistance);
+    printf("\n");
     
     return 0;
  }
