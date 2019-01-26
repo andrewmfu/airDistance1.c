@@ -31,10 +31,13 @@
     printf("Enter longitude of destination: ");
     scanf("%lf\n", &longitudeB);
     printf("\n");
-    
+
     equalSign = '=';
     
-    printf("Location Distance");
+  
+    
+        if ( latitudeA > -90 ) {
+           printf("Location Distance");
     printf("\n");
     printf("%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n", equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign,equalSign);
     
@@ -51,7 +54,15 @@
     airDistance = airDistance * averageRadius;
     
     printf("Air distance is %lf kms", airDistance);
-    printf("\n");
+    printf("\n");/* Execute these statements if TRUE */
+}
+else {
+         printf("Origin Latitude Invalid, should be between -90 and 90.");
+         printf("\n");/* Execute these statements if FALSE */
+}
+
+
+    
     
     return 0;
  }
